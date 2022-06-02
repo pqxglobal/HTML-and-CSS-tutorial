@@ -1,4 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("../fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
 
 * {
     box-sizing: border-box;
@@ -6,31 +14,115 @@
     color: #777;
 }
 
-html, body {
+html,
+body {
     margin: 0;
     padding: 0;
 }
 
-.nav ul {
-    margin: 0;
+.nav {
+    ul {
+        margin: 0;
+    }
+
+    li {
+        display: inline;
+    }
+
+    a {
+        // NOTE inline elements can not have top and bottom padding. set to display: inline-block
+        display: inline-block;
+        padding: 0.5em;
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: rgba(255, 255, 255, .3);
+    }
 }
 
-.nav li {
-    display: inline;
-}
+.main-nav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3);
 
-.nav a {
-    
-    // NOTE inline elements can not have top and bottom padding. set to display: inline-block
-    padding: 0.5em;
-    color: white;
-    text-decoration: none;
+    li {
+        padding: 0 5%;
+    }
 }
 
 .main-header {
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0, 0, 0, .6);
     background-image: url("../Images/Header_Background.jpg");
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 30px;
+}
+
+.band-name {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+
+.band-name-large {
+    font-size: 8em;
+}
+
+.content-section {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+
+.section-heading {
+    font-family: "Metal Mania";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.about-band-image {
+    float: left;
+    width: 200px;
+    height: 200px;
+    margin: 15px;
+    border-radius: 50%;
+}
+
+.main-footer {
+    background-color: #56ccf2;
+    color: white;
+    padding: 0.25em 0;
+}
+
+.main-footer-container {
+    display: flex;
+    align-items: center;
+
+    ul {
+        flex-grow: 1;
+        text-align: end;
+    }
+}
+
+.footer-nav {
+    li {
+        padding: 0 0.5em;
+    }
+
+    img {
+        width: 30px;
+        height: 30px;
+    }
 }
