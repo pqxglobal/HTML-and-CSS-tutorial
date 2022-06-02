@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    font-family: 'Raleway', sans-serif;
+    color: #777;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    
+    // NOTE inline elements can not have top and bottom padding. set to display: inline-block
+    padding: 0.5em;
+    color: white;
+    text-decoration: none;
+}
+
+.main-header {
+    background-color: rgba(0,0,0,.6);
+    background-image: url("../Images/Header_Background.jpg");
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
