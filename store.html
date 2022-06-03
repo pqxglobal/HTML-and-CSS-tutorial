@@ -4,122 +4,107 @@
 <head>
     <title>The Generics | Store</title>
     <meta name="description" content="This is the description">
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <script src="store.js" async></script>
 </head>
 
 <body>
-    <header>
-        <nav>
+    <header class="main-header">
+        <nav class="main-nav nav">
             <ul>
                 <li><a href="index.html">HOME</a></li>
                 <li><a href="store.html">STORE</a></li>
                 <li><a href="about.html">ABOUT</a></li>
             </ul>
         </nav>
-        <hr>
-        <h1>The Generics</h1>
+        <h1 class="band-name band-name-large">The Generics</h1>
     </header>
-    <section>
-        <h2>MUSIC</h2>
-        <div>
-            <div>
-                <strong>Album 1</strong>
+    <section class="container content-section">
+        <h2 class="section-header">MUSIC</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">Album 1</span>
+                <img class="shop-item-image" src="Images/Album_1.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$12.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
             </div>
-            <img src="./Images/Album_1.png" alt="cover album 1" width="300" height="300">
-            <div>
-                <span>$12.99</span>
-                <button role="button">ADD TO CART</button>
+            <div class="shop-item">
+                <span class="shop-item-title">Album 2</span>
+                <img class="shop-item-image" src="Images/Album_2.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$14.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
             </div>
-            <div>
-                <strong>Album 2</strong>
+            <div class="shop-item">
+                <span class="shop-item-title">Album 3</span>
+                <img class="shop-item-image" src="Images/Album_3.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$9.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
             </div>
-            <img src="./Images/Album_2.png" alt="cover album 2" width="300" height="300">
-            <div>
-                <span>$14.99</span>
-                <button role="button">ADD TO CART</button>
-            </div>
-            <div>
-                <strong>Album 3</strong>
-            </div>
-            <img src="./Images/Album_3.png" alt="cover album 3" width="300" height="300">
-            <div>
-                <span>$9.99</span>
-                <button role="button">ADD TO CART</button>
-            </div>
-            <div>
-                <strong>Album 4</strong>
-            </div>
-            <img src="./Images/Album_4.png" alt="cover album 4" width="300" height="300">
-            <div>
-                <span>$19.99</span>
-                <button role="button">ADD TO CART</button>
+            <div class="shop-item">
+                <span class="shop-item-title">Album 4</span>
+                <img class="shop-item-image" src="Images/Album_4.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
             </div>
         </div>
     </section>
-    <section>
-        <h2>MERCH</h2>
-        <div>
-            <strong>T-Shirt</strong>
-        </div>
-        <img src="./Images/Shirt.png" alt="t-shirt with coloured clouds" width="300" height="300">
-        <div>
-            <span>$19.99</span>
-            <button role="button">ADD TO CART</button>
-        </div>
-        <div>
-            <strong>Coffee Cup</strong>
-        </div>
-        <img src="./Images/Cofee.png" alt="cup of coffee" width="378" height="300">
-        <div>
-            <span>$19.99</span>
-            <button role="button">ADD TO CART</button>
-        </div>
-    </section>
-    <section>
-        <h2>CART</h2>
-        <div>
-            <strong>ITEM</strong>
-            &lt;&gt;
-            <strong>PRICE</strong>
-            &lt;&gt;
-            <strong>QUANTITY</strong>
-        </div>
-        <div>
-            <img src="./Images/Shirt.png" alt="cover Album 1" width="300" height="300">
-            <span>T-Shirt</span>
-            &lt;&gt;
-            <span>$19.99</span>
-            &lt;&gt;
-            <input type="number" value="1">
-            <button role="button">REMOVE</button>
-        </div>
-        <div>
-            <img src="./Images/Album_3.png" alt="cover Album 1" width="300" height="300">
-            <span>Album 3</span>
-            &lt;&gt;
-            <span>$9.99</span>
-            &lt;&gt;
-            <input type="number" value="2">
-            <button role="button">REMOVE</button>
-        </div>
-        <hr>
-        <div>
-            <strong>Total</strong>
-            <span>$39.97</span>
-        </div>
-        <div>
-            <button role="button">PURCHASE</button>
+    <section class="container content-section">
+        <h2 class="section-header">MERCH</h2>
+        <div class="shop-items">
+            <div class="shop-item">
+                <span class="shop-item-title">T-Shirt</span>
+                <img class="shop-item-image" src="Images/Shirt.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$19.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
+            <div class="shop-item">
+                <span class="shop-item-title">Coffee Cup</span>
+                <img class="shop-item-image" src="Images/Cofee.png">
+                <div class="shop-item-details">
+                    <span class="shop-item-price">$6.99</span>
+                    <button class="btn btn-primary shop-item-button" type="button">ADD TO CART</button>
+                </div>
+            </div>
         </div>
     </section>
-    <footer>
-        <h3>The Generics</h3>
-        <ul>
-            <li><a href="https://www.youtube.com/" target="_blank"><img src="Images/YouTube_Logo.png" alt="youtube logo"
-                        width="25" height="25"></a></li>
-            <li><a href="https://www.spotify.com/" target="_blank"><img src="Images/Spotify_Logo.png" alt="spotify logo"
-                        width="25" height="25"></a></li>
-            <li><a href="https://www.facebook.com/" target="_blank"><img src="Images/Facebook_Logo.png"
-                        alt="facebook logo" width="25" height="25"></a></li>
-        </ul>
+    <section class="container content-section">
+        <h2 class="section-header">CART</h2>
+        <div class="cart-row">
+            <span class="cart-item cart-header cart-column">ITEM</span>
+            <span class="cart-price cart-header cart-column">PRICE</span>
+            <span class="cart-quantity cart-header cart-column">QUANTITY</span>
+        </div>
+        <div class="cart-items">
+        </div>
+        <div class="cart-total">
+            <strong class="cart-total-title">Total</strong>
+            <span class="cart-total-price">$0</span>
+        </div>
+        <button class="btn btn-primary btn-purchase" type="button">PURCHASE</button>
+    </section>
+    <footer class="main-footer">
+        <div class="container main-footer-container">
+            <h3 class="band-name">The Generics</h3>
+            <ul class="nav footer-nav">
+                <li><a href="https://www.youtube.com/" target="_blank"><img src="Images/YouTube_Logo.png"
+                            alt="youtube logo" width="25" height="25"></a></li>
+                <li><a href="https://www.spotify.com/" target="_blank"><img src="Images/Spotify_Logo.png"
+                            alt="spotify logo" width="25" height="25"></a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><img src="Images/Facebook_Logo.png"
+                            alt="facebook logo" width="25" height="25"></a></li>
+            </ul>
+        </div>
+
     </footer>
 </body>
 
